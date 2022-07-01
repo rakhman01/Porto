@@ -6,9 +6,6 @@ import Client from "../public/clients.png"
 import Arrow from "../public/arrow.svg"
 
 const Meter = () => {
-
-    console.log(Arrow)
-
     interface values {
         url: any | string,
         value: string,
@@ -42,7 +39,6 @@ const Meter = () => {
         <div className='w-full h-auto flex flex-wrap justify-around items-center'>
             {value.map((val) => (
                 <>
-                    {console.log(val.url.src, "ini adalah ")}
                     <div className='w-80 h-24 flex justify-between items-center p-4 rounded-md bg-meter'>
                         <Image src={val.url.src} alt="icon" width={40} height={40} ></Image>
                         <div className='flex flex-col justify-around items-center'>
